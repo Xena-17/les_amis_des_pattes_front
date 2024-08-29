@@ -1,0 +1,65 @@
+:root {
+	--color-primary: #B4AFE9;
+	--color-dark-primary: #3A3B6B;
+	--color-secondary: #73877B;
+    --color-light-secondary: #FFFFFF;
+	--color-dark-secondary: #32445F;
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: Poppins;
+}
+
+/* Header */
+
+header {
+	background-color: var(--color-dark-primary);
+	color: var(--color-light-secondary);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px 10px 30px;
+}
+h1
+    {
+        font-size: 32px;
+		font-weight: bold;
+    }
+
+#logo {
+	width: 50%;
+	height: 50%;
+
+}
+#account_circle {
+    font-size: 50px;
+
+}
+
+/* Footer */
+
+#footer {
+    background-color: var(--color-dark-primary);
+    color: var(--color-light-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+    padding: 10px 0px 10px 30px;
+}
+#name {
+	font-size: 16px;
+    font-weight: bold;
+	padding: 10px 30px 10px 30px;
+}
