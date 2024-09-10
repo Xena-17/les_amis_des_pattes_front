@@ -217,7 +217,6 @@ h2 {
 /* Responsive pour les mobiles  */
 @media (max-width: 461px) {
 header {
-	flex-direction: column;
 	padding: 10px 15px;
 }
 
@@ -260,27 +259,25 @@ h2 {
 	
 .text {
 	font-size: 14px;
+	margin-top: 10px;
 	}
 
 #boxes_presentation {
 	flex-direction: column;
 	padding: 10px;
 	}
-
 .box_presentation {
-	margin: 10px 0;
-	height: auto; /* Ajuste automatiquement la hauteur selon le contenu */
+	margin: 20px 0;
+	min-height: 150px;
+	width: 300px;
+	vertical-align: middle;
 	}
 
 .image_container_welcome_page {
-	width: 100%;
-	height: auto;
 	display: none; 
 	}
 
 .image_welcome_page {
-	width: 100%;
-	height: auto;
 	display: none; 
 	}
 }
