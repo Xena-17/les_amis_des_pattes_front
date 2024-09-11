@@ -55,6 +55,7 @@ h1  {
 #account_circle {
     font-size: 50px;
 	align-items: flex-end;
+
 }
 
 #account_circle:hover {
@@ -62,6 +63,14 @@ h1  {
 	align-items: flex-end;
 	color: var(--color-primary);
 	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+a .material-icons {
+    color: var(--color-light-secondary);
+    transition: color 0.3s; /* Ajout d'une transition pour un effet visuel lors du hover */
 }
 
 /* Footer */
