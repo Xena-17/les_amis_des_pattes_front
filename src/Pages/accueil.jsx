@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="../index.css">
+  <title>Accueil</title>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="../Logo.png" alt="logo les amis des pattes avec un chat à l'intérieur d'un chien" id="logo">
+    </div>
+    <div>
+      <h1>Les Amis Des Pattes</h1>
+    </div>
+    <div class="header_link">
+      <a href="../Pages/connexion.html">
+        <span class="material-icons" id="account_circle">
+          account_circle
+        </span>
+      </a>
+    </div>
+  </header>
+  <main>
+    <h2>Présentation du site</h2>
+    <p id="introduction" class="text">
+      Les Amis des Pattes est un site permettant la mise en relation de propriétaires d’animaux (chats, chiens, NAC) et de Pet Sitters.
+    </p>
+    <p id="goal" class="text">
+      Ce site se veut un site de proximité permettant de trouver le Pet Sitter non loin de chez soi. De même pour le Pet Sitter, afin de lui éviter de longs déplacements pour effectuer la visite au domicile du propriétaire afin de s’occuper de ses animaux durant son absence.
+    </p>
+    <p id="text_guide" class="text">
+      Vous pouvez accéder à la rubrique qui vous intéresse en cliquant directement sur l'un des blocs ci-dessous.
+    </p>
+    <div id="boxes_presentation">
+      <!-- Box 1 -->
+      <a href="./premiere_connexion.html" class="box_presentation">
+        <div>
+          <p class="text">Vous êtes propriétaire d'un ou plusieurs animaux ?</p>
+        </div>
+        <div class="image_container_welcome_page">
+          <img src="../assets/images/homme avec chat (1).jpg" alt="quatre chiens de races différentes en laisse et assis"
+               class="image_welcome_page">
+        </div>
+      </a>
+
+      <!-- Box 2 -->
+      <a href="./premiere_connexion.html" class="box_presentation">
+        <div>
+          <p class="text">Vous êtes Pet Sitter ?</p>
+        </div>
+        <div class="image_container_welcome_page">
+          <img src="../assets/images/four_dogs (1).jpg" alt="homme barbu avec chat gris tigré"
+               class="image_welcome_page">
+        </div>
+      </a>
+    </div>
+  </main>
+  <footer id="footer">
+    <p id="name">Created by : Josiane BUREAU</p>
+  </footer>
+  <script src="../index.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('http://127.0.0.1:3001/hello') 
+
+      .then(data => {
+        const serverResponse = document.createElement('p');
+        serverResponse.textContent = `Réponse du serveur: ${data}`;
+        document.body.appendChild(serverResponse);
+      })
+      .catch(error => {
+        console.error('Erreur lors de la requête au serveur:', error);
+      });
+  });
+</script>
+  
+</body>
+</html>

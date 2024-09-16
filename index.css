@@ -152,6 +152,72 @@ h2 {
 	object-fit: cover;
 }
 
+/* Page connexion */
+
+#connexion {
+position: relative; /* Nécessaire pour positionner correctement le pseudo-élément */
+background: none; /* Retire les autres backgrounds */
+}
+  
+#connexion::before {
+content: ""; /* Nécessaire pour afficher le pseudo-élément */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("./assets/images/man_with_cats\ \(1\).jpg");
+background-size: cover; /* Assure que l'image couvre tout le conteneur */
+background-position: center; /* Centrer l'image */
+opacity: 0.5; /* Ajuste l'opacité de l'image */
+z-index: -1; /* Place l'image derrière le contenu du conteneur */
+}
+ 
+#container{
+width:400px;
+margin:0 auto;
+margin-top:10%;
+}
+/* Bordered form */
+form {
+width:100%;
+padding: 30px;
+border: 1px solid #f1f1f1;
+background: #fff;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+width: 38%;
+margin: 0 auto;
+padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+background-color: #53af57;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+input[type=submit]:hover {
+background-color: white;
+color: #53af57;
+border: 1px solid #53af57;
+}
+
 
 /* Responsive pour les tablettes et moyens écrans */
 @media screen and (min-width: 481px) and (max-width: 992px){

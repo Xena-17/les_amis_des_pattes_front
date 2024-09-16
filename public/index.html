@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="../index.css">
+  <title>Les Amis Des Pattes</title>
+</head>
+
+<body>
+  <div id="root">Bonjour</div>
+  <!-- Le fichier React s'attachera ici via ce div avec l'ID "root" -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Your custom script here -->
+  <script type="text/babel">
+    function Mycomponent() {
+      return <div>Mon composant apparaît bien</div>
+    }
+    ReactDOM.render(<Mycomponent />, document.getElementById("root"));
+  </script>
+</body>
+
+</html>
