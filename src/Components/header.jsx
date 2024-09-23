@@ -1,15 +1,16 @@
 import React from 'react';
 import './header.css'; 
-import logo from '../assets/images/Logo.png';
+import Logo from '../assets/images/Logo.png'
 
 
 const Header = () => {
-  return (
-    <header>
-      <div className="logo">
+  return <>
+  <Header>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <div className="logo" id="root">
         <a href="/">
           <img
-            src={logo} 
+            src={Logo} 
             alt="logo les amis des pattes avec un chat à l'intérieur d'un chien"
             className="logo-image"
           />
@@ -23,8 +24,8 @@ const Header = () => {
           account_circle
         </span>
       </div>
-    </header>
-  );
+  </Header>
+    </>;
 }
 
 export default Header;

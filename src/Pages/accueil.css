@@ -1,0 +1,192 @@
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding: 30px 0px 30px 0px;
+	margin-top: 120px;
+}
+.text {
+	font-size: 18px;
+	font-weight: bold;
+}
+#boxes_presentation {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	padding: 30px;
+
+
+}
+.box_presentation {
+	background-color: var(--color-dark-secondary);
+	padding: 30px;
+	margin: 30px;
+	border-radius: 20px;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	flex-basis: 50%;
+	color : var(--color-light-secondary);
+	height: 600px;
+
+}
+.box_presentation:hover {
+	cursor: pointer;
+	background-color: var(--color-primary);
+	color: var(--color-dark-secondary);
+}
+.image_container_welcome_page {
+	width: 80%;
+	height: 80%;
+	padding: 30px 10px 20px 10px;
+	margin:auto;
+	position: relative;
+}
+
+.image_welcome_page {
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+}
+
+
+
+
+/* Responsive pour les tablettes et moyens écrans */
+@media screen and (min-width: 481px) and (max-width: 992px){
+header{
+	padding: 10px 20px;
+	display: flex;
+}
+
+h1 {
+	font-size: 20px;
+	padding: 0px 20px 0 20px;
+}
+
+#logo {
+	width: 5vw;
+}
+
+#account_circle {
+	font-size: 40px;
+}
+
+#account_circle:hover {
+	font-size: 48px;
+}
+
+#footer {
+	padding: 10px 10px;
+}
+
+#name {
+	font-size: 10px;
+}
+
+main {
+	margin: 10px;
+	padding: 0px 20px 20px 20px;
+}
+
+h2 {
+	font-size: 22px;
+	margin-top: 100px;
+}
+
+.text {
+	font-size: 16px;
+	margin-top: 20px;
+	
+
+}
+
+#boxes_presentation {
+	flex-direction: column; /* Modification en colonne pour l'affichage tablette */
+	padding: 20px;
+}
+
+.box_presentation {
+	margin: 20px 0;
+	min-height: 150px;
+	width: 800px;
+	vertical-align: middle;
+
+}
+.image_container_welcome_page {
+	display: none;
+
+}
+.image_welcome_page {
+	display: none;	
+}
+}
+
+/* Responsive pour les mobiles  */
+@media (max-width: 461px) {
+header {
+	padding: 10px 15px;
+}
+
+h1 {
+	font-size: 24px;
+	padding: 10px 0 5px 0;
+}
+
+#logo {
+	width: 12vw;
+}
+
+#account_circle {
+	font-size: 35px;
+}
+
+#account_circle:hover {
+	font-size: 40px;
+}
+
+#footer {
+	flex-direction: column;
+	padding: 10px 15px;
+	text-align: center;
+}
+
+#name {
+	font-size: 12px;
+}
+
+main {
+	margin: 10px;
+	padding: 0px 10px 10px 10px;
+	}
+
+h2 {
+	font-size: 20px;
+	margin-top: 80px;
+	}
+	
+.text {
+	font-size: 14px;
+	margin-top: 10px;
+	}
+
+#boxes_presentation {
+	flex-direction: column;
+	padding: 10px;
+	}
+.box_presentation {
+	margin: 20px 0;
+	min-height: 150px;
+	width: 300px;
+	vertical-align: middle;
+	}
+
+.image_container_welcome_page {
+	display: none; 
+	}
+
+.image_welcome_page {
+	display: none; 
+	}
+}
+
+

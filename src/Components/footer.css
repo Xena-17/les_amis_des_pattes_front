@@ -1,0 +1,19 @@
+
+#footer {
+    background-color: var(--color-dark-primary);
+    color: var(--color-light-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+    padding: 10px 0px 0px 30px;
+	position: fixed;
+
+}
+#name {
+	font-size: 16px;
+    font-weight: bold;
+	padding: 10px 30px 10px 30px;
+}
