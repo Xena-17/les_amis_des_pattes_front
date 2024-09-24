@@ -1,14 +1,11 @@
 import React from "react";
 import './accueil.css';
-import Header from '../Components/Header'; 
-import Footer from '../Components/Footer'; 
 import manWithCat from '../assets/images/ManWithCat.jpg';
 import fourDogs from '../assets/images/FourDogs.jpg';
 
 const Accueil = () => {
   return (
     <>
-      <Header /> {/* Utiliser le composant Header */}
       <div className="welcome_page">
         <h1>Présentation du site</h1>
         <p id="introduction" className="text">
@@ -47,7 +44,6 @@ const Accueil = () => {
           </a>
         </div>
       </div>
-      <Footer /> {/* Utiliser le composant Footer */}
     </>
   );
 };

@@ -5,7 +5,6 @@ import Logo from '../assets/images/Logo.png'
 
 const Header = () => {
   return <>
-  <Header>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       <div className="logo" id="root">
         <a href="/">
@@ -24,7 +23,6 @@ const Header = () => {
           account_circle
         </span>
       </div>
-  </Header>
     </>;
 }
 
